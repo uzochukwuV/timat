@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <style>
+    .montserrat-base {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+.montserrat-medium {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.montserrat-semibold {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.montserrat-bold {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+  </style>
+  <link rel="stylesheet" href="dist/style.css">
+</head>
+<body class="bg-white montserrat-base">
+    <div class=" absolute top-96 left-[60%] rounded-full blur-3xl bg-sky-400/60 w-12 h-12 md:h-36 md:w-36 "></div>
+    <div class=" absolute top-[15rem] left-[57%] rounded-full blur-3xl bg-sky-400/60 w-12 h-12 md:h-36 md:w-36 "></div>
+    <div class=" absolute top-[20rem] left-[54%] rounded-full blur-3xl bg-sky-400/60 w-12 h-12 md:h-36 md:w-36"></div>
+  <div id="app">
+    <!-- ... -->
+
+    <div role="navigation" aria-label="Main navigation" class=" bg-white montserrat-medium relative px-6 py-8 border-b ">
+        <div class=" flex w-full justify-between items-center bg-white">
+            <div class=" montserrat-semibold text-2xl">TIIMAT</div>
+            <div id="menubar" class="nav absolute top-[-140%] left-0 right-0 -z-20 hidden">
+                <div class=" border-b py-4 px-6 flex justify-between gap-4 items-center">
+                    <p>Faculties</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                </div>
+                <div class=" border-b py-4 px-6 flex justify-between gap-4 items-center">
+                    <p>About Us</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                </div>
+            </div>
+            <div id="menu">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </div>
+        </div>
+    </div>
+
+    <div role="main">
+        <div class="min-h-[75vh] flex justify-center items-center">
+            <div class="montserrat-semibold text-xl flex justify-center items-center flex-col gap-6">
+                <div class=" flex justify-center items-center flex-col  text-slate-600 ">
+                    <h3 class="  text-8xl ">TIIMAT</h3>
+                    <h4 class=" text-2xl">Solutions</h4>
+                </div>
+                <div>
+                    <div class="bg-slate-600 px-6 py-1 rounded-xl text-white ">school of</div>
+                </div>
+                <div>
+                    <ol role="list" class=" list-disc justify-center flex items-center flex-col">
+                        <li role="listitem">Management</li>
+                        <li>Computer Software Technlogy</li>
+                        <li>Multimedia technology</li>
+                        
+                    </ol>
+                </div>
+                <div>
+                    <div class="border border-slate-600 px-8 py-3 rounded-3xl flex gap-4 ">
+                        <p>Explore Courses </p>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  </div>
+  <script src="dist/script.js"></script>
+</body>
+</html>
