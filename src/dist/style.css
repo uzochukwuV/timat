@@ -1,5 +1,9 @@
 
 
+* {
+    transition: all 0.3s;
+}
+
 .animateIn {
     display: block;
     animation: animateIn .5s ease 0s  forwards;
@@ -9,5 +13,19 @@
 @keyframes animateIn {
     100% {
         top: 100%;
+    }
+}
+
+
+.b-pattern {
+    background-color: #e5e5f7;
+opacity: 0.3;
+background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+background-size: 10px 10px;
+}
+
+@media screen and (max-width: 760px) {
+    #menubar {
+        /* display: none !important; */
     }
 }
